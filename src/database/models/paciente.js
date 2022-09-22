@@ -2,7 +2,7 @@
 
 module.exports = (sequelize, DataTypes) => {
 
-  let Medico = sequelize.define('medico', {
+  let Paciente = sequelize.define('paciente', {
     id: {
       type: DataTypes.BIGINT,
       autoIncrement: true,
@@ -19,12 +19,15 @@ module.exports = (sequelize, DataTypes) => {
     },
     email: {
       type: DataTypes.STRING,
+      allowNull: true
     },
-    especialidad: {
-      type: DataTypes.STRING,
-    },
-    tiempo_trabajando: {
+    edad: {
       type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    obra_social: {
+      type: DataTypes.STRING,
+      allowNull: true
     },
     createdAt: {
       type: DataTypes.DATE,
@@ -47,10 +50,10 @@ module.exports = (sequelize, DataTypes) => {
     freezeTableName: true,
   })
 
-  Medico.associate = models => {
-    Medico.hasMany(models.paciente_medico)
+  Paciente.associate = models => {
+    Paciente.hasMany(models.paciente_medico)
   }
 
-  return Medico
+  return Paciente
 }
 

@@ -27,4 +27,4 @@ Documentación: https://documenter.getpostman.com/view/21047550/2s7ZT6RQtQ
 ---
 
 ## Más información
-Te dejo el link a un video explicando el funcionamiento de este proyecto: 
+Te dejo el link a un video explicando el funcionamiento de este proyecto: https://youtu.be/J8oLwY5114c

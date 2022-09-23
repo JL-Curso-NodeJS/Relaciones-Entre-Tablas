@@ -1,4 +1,4 @@
-# Estructura Básica de un proyecto con NodeJS utilizando Express - PARTE 2
+# Relaciones entre tablas - Sequelize
 
 Este repositorio se realizó en base a la estructura del proyecto 3, agregándole relaciones entre las tablas paciente y médico.
 
